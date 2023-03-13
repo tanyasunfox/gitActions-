@@ -47,7 +47,10 @@ jobs:
         run : git commit -m "changes made"
         
       - name : pushing 
-        run : git push origin main 
+        run : git remote add origin https://github.com/tanyasunfox/gitActions-.git
+     
+      - name : push 
+        run : git push origin -u main 
 
     
      
