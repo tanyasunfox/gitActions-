@@ -36,6 +36,12 @@ jobs:
            pwd 
            ls
            cat file2.txt
+           
+      - name: adding file 
+        run : |
+             git add .
+             git commit -m "file2 added"
+             git push origin main 
 
     
      
