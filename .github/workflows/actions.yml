@@ -29,7 +29,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: creating a file from remote file 
-        run: echo workflow file  > file2.txt
+        run: cp file1.txt file2.txt
         
       - name: displaying the contents
         run: |
