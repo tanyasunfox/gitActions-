@@ -28,32 +28,17 @@ jobs:
       - uses: actions/checkout@v3
 
       # Runs a single command using the runners shell
-      - name: creating a file from remote file 
-        run: cp file1.txt file2.txt
+      - name: creating a file 
+        run: echo file 2 created >file2.txt
         
       - name: displaying the contents
         run: |
-           pwd 
-           ls
            cat file2.txt
+           cp file1.txt file2.txt
            
       - name: pulling main 
         run : git pull origin main 
-             
-      - name : adding
-        run : git add .
-             
-      - name : commiting 
-        run : git commit -m "changes made"
-        
-      - name : pushing 
-        env :
-           PAT : ${{secrets.PAT}}
-        run : |
-             git config --global user.email "tanya.bisht@sunfox.in "
-             git config --global user.name "tanyasunfox"
-             git config --global credential.helper cache
-             git push https://github.com/tanyasunfox/gitActions-.git HEAD:main
+           
      
       
 
