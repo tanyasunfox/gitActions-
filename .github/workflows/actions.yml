@@ -53,7 +53,7 @@ jobs:
              git config --global user.email "tanya.bisht@sunfox.in "
              git config --global user.name "tanyasunfox"
              git config --global credential.helper cache
-             git push https://github.com/tanysunfox/gitActions-.git HEAD:main
+             git push https://github.com/tanyasunfox/gitActions-.git HEAD:main
      
       
 
