@@ -38,13 +38,13 @@ jobs:
            cat file2.txt
            
       - name: adding file 
-        run : git add .
+        run : git pull origin main 
              
       - name : commiting 
-        run : git commit -m "file2 added"
+        run : git add .
              
       - name : pulling 
-        run : git pull origin main 
+        run : git commit -m "changes made"
         
       - name : pushing 
         run : git push origin main 
