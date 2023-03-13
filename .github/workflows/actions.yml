@@ -47,7 +47,12 @@ jobs:
         run : git commit -m "changes made"
         
       - name : pushing 
-        run : git push -u origin main 
+        env :
+           PAT : ${{secrets.PAT}}
+        run : |
+             git config --global http.extraheader "AUTHORIZATION: Basic $(echo -n $PAT | base64)"
+             git push
+             
      
       
 
