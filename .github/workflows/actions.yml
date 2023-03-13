@@ -44,10 +44,7 @@ jobs:
         run : git commit -m "file2 added"
              
       - name : pulling 
-        run : git pull -u origin main 
-        
-      - name : pushing 
-        run : git push -u origin main 
+        run : git pull origin main 
 
     
      
