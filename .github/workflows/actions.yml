@@ -50,9 +50,10 @@ jobs:
         env :
            PAT : ${{secrets.PAT}}
         run : |
-             git config --global http.extraheader "AUTHORIZATION: Basic $(echo -n $PAT | base64)"
-             git push
-             
+             git config --global user.email "tanya.bisht@sunfox.in "
+             git config --global user.name "tanyasunfox"
+             git config --global credential.helper cache
+             git push https://github.com/tanysunfox/gitActions-.git HEAD:main
      
       
 
