@@ -47,7 +47,7 @@ jobs:
         run : git pull origin main 
         
       - name : pushing 
-        run : git push -u origin main 
+        run : git push origin main 
 
     
      
