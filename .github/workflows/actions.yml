@@ -65,7 +65,7 @@ jobs:
      if: github.event.pull_request.merge == true
      runs-on: macos-latest
      steps:
-        - uses:actions/upload-artifact@v3
+        - uses : actions/upload-artifact@v3
           with :
              name : my-artifact3  
              path: file1.txt
