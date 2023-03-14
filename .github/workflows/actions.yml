@@ -53,12 +53,14 @@ jobs:
         with:
              name: my-artifact
              
-      - run: cat file2.txt
+      - run: echo file3>file3.txt  
+             
+      - run: cp file2.txt file3.txt
 
       - uses : actions/upload-artifact@v3
         with :
-             name: my-artifact
-             path: file2.txt
+             name: my-artifact2
+             path: file3.txt
 
            
        
