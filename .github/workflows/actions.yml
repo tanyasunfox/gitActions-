@@ -9,7 +9,8 @@ on:
     branches: [ "main" ]
     
   pull_request:
-    branches: [ "main" ]
+    types: [closed]
+    
 
 
 
@@ -59,7 +60,15 @@ jobs:
         with :
              name: my-artifact2
              path: file3.txt
-
+  job_3:
+     
+     if: github.event.pull_request.merge == true
+     runs-on: macos-latest
+     steps:
+        - uses:actions/upload-artifact@v3
+          with :
+             name : my-artifact3  
+             path: file1.txt
            
        
         
