@@ -45,7 +45,7 @@ jobs:
   job_2:
    
      runs-on: macos-latest
-     needs: [build]
+     needs: build
        
      steps:
          
