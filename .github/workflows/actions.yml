@@ -52,6 +52,14 @@ jobs:
       - uses: actions/download-artifact@v3
         with:
              name: my-artifact
+             
+      - run: |
+              value='cat file2.txt'
+              $value nice>file2.txt
+      - uses : actions/upload-artifact@v3
+        with :
+             name: my-artifact
+             path: file2.txt
 
            
        
