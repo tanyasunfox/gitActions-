@@ -32,9 +32,9 @@ jobs:
         run: echo file 2 created >file2.txt
         
       - name: displaying the contents
-        run: |
-           cat file2.txt
-           cp file1.txt file2.txt
+        run: cat file2.txt
+           
+      - run : cp file1.txt file2.txt
            
       - name: pulling main 
         run : git pull origin main 
