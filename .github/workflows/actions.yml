@@ -1,6 +1,6 @@
 
 
-name: CI
+name: GIT
 
 # Controls when the workflow will run
 on:
