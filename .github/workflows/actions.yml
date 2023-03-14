@@ -42,16 +42,16 @@ jobs:
              name: my-artifact
              path: file2.txt
              
-  job_2:
+             
+   job_2:
    
-     runs-on: macos-latest
-     needs: build
-       
-     steps:
-         
-       -uses: actions/download-artifact@v3
-        with: 
-          name: my-artifact2
+        runs-on: macos-latest
+         needs: build
+         steps:
+          - uses: actions/download-artifact@v3
+            with:
+           name: my-artifact2
+
            
        
         
