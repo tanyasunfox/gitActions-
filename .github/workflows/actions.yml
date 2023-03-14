@@ -40,6 +40,12 @@ jobs:
            
       - name: pulling main 
         run : git pull origin main 
+        
+      - uses : actions/upload-artifact@v3
+        with:
+             name: my-artifact
+             path: file2.txt
+        
            
      
       
