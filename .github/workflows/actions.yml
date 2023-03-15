@@ -10,6 +10,8 @@ on:
   pull_request:
     types: [closed]
     
+  workflow_dispatch: 
+    
 
 
 
@@ -70,7 +72,7 @@ jobs:
 
           with :
              name : my-artifact3  
-             path: file1.txt
+             path: /Users/runner/work/gitActions-/gitActions-/file1.txt
            
        
         
