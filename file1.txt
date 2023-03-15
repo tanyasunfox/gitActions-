@@ -1,5 +1,5 @@
 file1
 changes made for git actions  
 
-chnagesss
-chnaghes after workflow updated 
+changesss
+chnages after workflow updated 
