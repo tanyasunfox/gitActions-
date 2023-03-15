@@ -60,7 +60,7 @@ jobs:
              name: my-artifact2
              path: file3.txt
   job_3:
-     if: github.event.pull_request.merge == true
+
  
  
      runs-on: macos-latest
