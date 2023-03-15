@@ -69,9 +69,7 @@ jobs:
      steps:
      
         - name: file path 
-          run: | 
-                pwd  
-                ls
+          run: ls
 
         - uses : actions/upload-artifact@v3
 
