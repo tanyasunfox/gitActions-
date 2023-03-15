@@ -71,6 +71,7 @@ jobs:
         - name: file path 
           run: | 
                 pwd  
+                ls
 
         - uses : actions/upload-artifact@v3
 
