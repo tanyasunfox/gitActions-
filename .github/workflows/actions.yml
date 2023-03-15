@@ -67,7 +67,7 @@ jobs:
         - uses : actions/upload-artifact@v3
           with :
              name : my-artifact3  
-             path: desktop/gittut/gitActions-/file1.txt
+             path: gitActions-/file1.txt
            
        
         
